@@ -1,8 +1,12 @@
+// The Heading Start
+
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("./config.json");
 
- 
+// The Heading End
+
+ // Status Start
 client.on("ready", () => {
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setPresence({
@@ -11,6 +15,9 @@ client.on("ready", () => {
     });
 });
 
+// Status End
+
+// Main Code Start
 client.on("presenceUpdate", async (oldMember, newMember) => {
             if (!oldMember || !newMember) return;
             const guild = oldMember.guild
@@ -43,6 +50,13 @@ client.on("presenceUpdate", async (oldMember, newMember) => {
               }
 
         
-});  
+});
+
+
+// Main Code End
+
+// Login Start
 
 client.login(config.TOKEN);
+
+// Login End
