@@ -1,6 +1,6 @@
 {
-  "roleId": "",
-  "message": "qcdevs.xyz/discord",
-  "logs": "",
-  "TOKEN": ""
+  "roleId": "The Role Id Of The USER Should Get after Appling The Status",
+  "message": "Add Ur Custom Msg That A USER Should Have",
+  "logs": "Ur Logs Channel ID",
+  "TOKEN": "Your Bot Token"
 }
